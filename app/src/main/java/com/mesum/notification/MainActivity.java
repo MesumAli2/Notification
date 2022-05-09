@@ -15,6 +15,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -120,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
             notificationChannel.enableVibration(true);
             notificationChannel.setDescription("Notification from Mascot");
             mNotifyManager.createNotificationChannel(notificationChannel);
+            Log.d("Notification", "Message");
         }
     }
 
